@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparent"
+    tools:background="@drawable/bg_pattern"
+    tools:context=".ui.history.HistoryEmptyFragment">
+
+
+    <Toolbar
+        android:id="@+id/toolbar_empty"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_marginStart="16dp"
+        android:navigationIcon="@drawable/ic_nav_back">
+    </Toolbar>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:layout_marginStart="28dp"
+        android:layout_marginEnd="28dp"
+        >
+
+        <ImageView
+            android:layout_width="152dp"
+            android:layout_height="108dp"
+            android:id="@+id/img_dice"
+            android:src="@drawable/illustration_empty_history"
+            android:contentDescription="@string/dice_img"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/info_message"
+            android:text="@string/no_history_message"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_below="@+id/img_dice"
+            style="@style/AppTheme.Widget.TextView.HistoryDiceDouble"
+            android:paddingTop="25dp"
+            android:textSize="24sp"
+            />
+
+        <TextView
+            style="@style/AppTheme.Widget.TextView.Regular"
+            android:layout_width="304dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/info_message"
+            android:layout_centerInParent="true"
+            android:layout_centerHorizontal="true"
+            android:paddingTop="25dp"
+            android:text="Dă shake sau învârte zarurile, aici vor apărea toate scorurile tale"
+            android:textAlignment="center"
+            android:textSize="16sp" />
+
+    </RelativeLayout>
+
+
+
+</FrameLayout>

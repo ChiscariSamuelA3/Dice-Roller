@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="20dp"
+    android:layout_marginTop="10dp"
+    android:background="@drawable/bg_history_preview"
+    >
+
+    <TextView
+        android:id="@+id/tv_dice_history_sum"
+        style="@style/AppTheme.Widget.TextView.HistoryDiceDefault"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="30dp"
+        android:paddingVertical="20dp"
+        android:text="@string/txt_no_sum"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tv_dice_history_numbers"
+        style="@style/AppTheme.Widget.TextView.HistoryDiceDefault"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:paddingHorizontal="30dp"
+        android:paddingVertical="20dp"
+        android:text="@string/txt_no_dice"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_dice_history_double"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="30dp"
+            android:paddingVertical="20dp"
+            android:text="@string/txt_double"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            style="@style/AppTheme.Widget.TextView.HistoryDiceDouble"
+            android:layout_gravity="end"
+            android:visibility="gone"
+            />
+
+</FrameLayout>
